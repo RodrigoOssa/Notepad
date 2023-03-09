@@ -1,6 +1,103 @@
+:root {
+  --color-background-template: rgba(185, 185, 185, 0.55);
+  --color-border-template: black;
+  --border-radius-template: 10px;
+  --padding-template: 2.5vw;
+}
+
 html,
 body {
-  margin: 0px;
+  margin: 0;
   border: 0;
   padding: 0;
+}
+
+html {
+  background: url(../public/img/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.notepad {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.addNote {
+  width: 80vw;
+  height: 16vh;
+  margin: 2vh 0;
+  background-color: rgba(185, 185, 185, 0.55);
+  border-radius: var(--border-radius-template);
+  padding: var(--padding-template);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+
+}
+
+.hoja-notas {
+  width: 40%;
+  height: 100%;
+  background: url(/public/img/hoja_notas2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-right: 5vw;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+.noteForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.inputTextArea {
+  height: 65%;
+  margin-top: 20px;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  appearance: none;
+}
+
+.inputBotton {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.titulo-nota {
+  width: 30%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
